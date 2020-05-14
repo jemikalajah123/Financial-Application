@@ -1,0 +1,254 @@
+* {
+  margin: 1px;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url("images/image-mockups.png");
+  background-size: 15%;
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-color: rgb(129, 189, 212);
+  padding: 10px;
+  padding-bottom: 60px;
+  overflow-x: hidden;
+}
+
+.topbar {
+  display: flex;
+  position: sticky;
+  margin-top: 1px;
+}
+
+.navbar {
+  margin-left: 50%;
+  display: flex;
+  padding: 5px;
+  float: right;
+}
+
+.navbar a {
+  margin: 10px;
+  color: rgba(37, 33, 88, 0.883);
+  font-style: solid;
+  font-weight: bolder;
+  font-size: medium;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  opacity: 0.6;
+}
+
+.button {
+  width: 20%;
+  height: 30px;
+  border: none;
+  outline: none;
+  padding: 5px 12px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgb(86, 204, 161);
+  color: white;
+  transition-duration: 0.4s;
+  margin-top: 3%;
+  margin-left: 24%;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {
+  background-color: rgba(37, 33, 88, 0.883);
+  color: rgb(86, 204, 161);
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.container {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  margin: 0.5% auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  position: relative;
+}
+
+.pane-1 {
+  margin-left: 2%;
+  height: 150px;
+}
+
+#form-message {
+  background-color: rgb(255, 232, 232);
+  border: 1px solid red;
+  color: red;
+  display: none;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 3px;
+  padding: 5px 20px;
+  max-width: 65%;
+  margin-left: 10%;
+}
+
+.form form {
+  margin-top: 2%;
+  text-align: left;
+}
+
+input[type="number"] {
+  width: 40%;
+  height: 8px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border-radius: 4px;
+  border-style: solid;
+  background-color: rgb(86, 204, 161);
+  color: white;
+}
+
+input[type="number"]:focus {
+  outline: none;
+  background-color: rgba(37, 33, 88, 0.883);
+}
+
+input[type="date"] {
+  border-radius: 4px;
+  border: 2px solid white;
+}
+
+#earn, #earn-tax, #earn-inflation {
+  margin-bottom: 10px;
+  width: 30%;
+  height: 15px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  border-style: none;
+  background-color: rgb(86, 204, 161);
+  color: white;
+  border-style: solid;
+}
+
+.earn-label  {
+  margin-left: 2%;
+  font-size: small;
+  font-weight: bold;
+}
+#period {
+  font-size: 13px;
+  font-family: sans-serif;
+  font-weight: 400;
+  color: black;
+  line-height: 1.3;
+  padding: 0.4em 1.4em 0.5em 0.8em;
+  width: 20%;
+  box-sizing: border-box;
+  border: 2px solid white;
+  box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  background-color: rgb(86, 204, 161);
+}
+
+#period:hover {
+  background-color: rgba(37, 33, 88, 0.883);
+}
+
+#period:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 1px 3px rgba(59, 153, 252, 0.7);
+  box-shadow: 0 0 0 3px -moz-mac-focusring;
+  color: #222;
+  outline: none;
+}
+
+#period option {
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 25px;
+  text-align: left;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+.pane-2 {
+  margin-right: 2%;
+  height: 70px;
+}
+
+.services {
+  margin-top: 2%;
+}
+
+.container-footer {
+  background-color: #3ca2d1a8;
+  margin-top: 100%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  height: 10%;
+  padding: 2px 2px;
+}
+
+.row-icons {
+  margin-left: 22%;
+}
+
+.row-link {
+  margin-left: 15%;
+}
+
+.row-link a {
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+::-webkit-datetime-edit {
+  background-color: rgb(86, 204, 161);
+  padding: 0.7em;
+}
+
+::-webkit-datetime-edit-fields-wrapper {
+  background: rgb(86, 204, 161);
+}
+
+::-webkit-datetime-edit-text {
+  padding: 0.4em;
+}
+
+::-webkit-inner-spin-button {
+  display: none;
+}
+
+::-webkit-calendar-picker-indicator {
+  background-color: black;
+  color: rgb(86, 204, 161);
+}
+.result{
+  display: block;
+  padding: 5px; 
+}
